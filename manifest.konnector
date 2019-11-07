@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "name": "Unsplash Home Background",
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.svg",
+  "slug": "unsplash-home-background",
+  "source": "git@github.com:konnectors/unsplash-home-background.git",
+  "editor": "dohseven",
+  "vendor_link": "https://source.unsplash.com/",
+  "categories": ["other"],
+  "fields": {
+    "keyword": {
+      "type": "text"
+    }
+  },
+  "frequency": "hourly",
+  "data_types": [
+    "files"
+  ],
+  "screenshots": [],
+  "permissions": {
+    "files": {
+      "type": "io.cozy.files"
+    },
+    "accounts": {
+      "type": "io.cozy.accounts",
+      "verbs": ["GET"]
+    }
+  },
+  "developer": {
+    "name": "dohseven",
+    "url": "https://cozy.io"
+  },
+  "langs": ["fr", "en"],
+  "locales": {
+    "fr": {
+      "short_description": "Récupère une photo Unsplash pour le fond d'écran",
+      "long_description": "Récupère une photo de Unsplash pour l'utiliser en fond d'écran de l'application Home de Cozy",
+      "permissions": {
+        "files": {
+          "description": "Utilisé pour sauvegarder les factures"
+        },
+        "accounts": {
+          "description": "Utilisé pour obtenir les données du compte"
+        }
+      },
+      "fields": {
+        "keyword": {
+          "label": "Mot-clé",
+          "description": "Mot-clé utiliser pour filtrer les photos à utiliser"
+        }
+      }
+    },
+    "en": {
+      "short_description": "Fetch an Unsplash photo for the background",
+      "long_description": "Fetch a photo from Unsplash in order to use it as a background for the Home application of Cozy",
+      "permissions": {
+        "files": {
+          "description": "Required to save the bills"
+        },
+        "accounts": {
+          "description": "Required to get the account's data"
+        }
+      },
+      "fields": {
+        "keyword": {
+          "label": "Keyword",
+          "description": "Keyword used to filter the photo to use"
+        }
+      }
+    }
+  },
+  "manifest_version": "2"
+}
